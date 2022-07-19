@@ -1,0 +1,15 @@
+body{
+    background-color: rgba(0, 0, 0, 0.863);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,a{
+    color: white;
+    text-decoration: none;
+}
+
+div , h1{
+    display: flexbox;
+    text-align: center;
+    padding: 10px;
+}
