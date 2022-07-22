@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        /* Display muda a caracteristica padrao do bloco por exemplo transformando inline-level em block-level e vice-versa*/
+
+        /*Teste keyframe*/
+
+        @keyframes load{
+            0%{
+                box-shadow: 0 0 #ed3b65 inset;
+            }
+            100%{
+                box-shadow: 0 -70px #ed3b65 inset;
+            }
+
+        }
+
+        .loader{
+                transform:perspective(140px) rotateX(-45deg);
+                width: 32px;
+                height: 72px;
+                margin: auto;
+                position: relative;
+                border: 2px solid #000;
+                animation: load 1.5s linear infinite alternate;
+                
+            }
+
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /* inline - level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /* SHORTHAND BORDER
+            border: 10px solid darkslategray
+            */
+
+            /* CONFIGURAR NO SENTIDO HORARIO*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /* SHORTHAND PADDING
+            padding: 10px 10px 10px 10px; 
+            -> (se forem iguais pode informar uma unica vez) -> padding: 10px;
+            */
+
+            margin: auto; /* centraliza a caixa automaticamente */
+
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+            /* SHORTHAND DE MARGIN
+            margin: 20px 20px 40px 20px
+            */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;/* outline não muda o tamanho d a margem*/
+
+            /* SHORTHAND OUTLINE
+            outline: 5px dashed salmon
+            */
+            
+        }
+
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">Links são exemplos de inline-level</a>vamos ver como tudo funciona</p>
+    <div class="loader"></div>
+    
+</body>
+</html>

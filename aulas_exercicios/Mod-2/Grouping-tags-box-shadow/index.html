@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        header > h1{
+            text-align: center;
+        }
+
+        nav{
+            background-color: rgb(165, 158, 158);   
+            padding: 2px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.466);
+        }
+
+        nav > a {
+            text-decoration: none;
+            margin-right: 8rem;
+            color: white;
+            font-weight: bold;
+            
+            
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+
+        }
+
+        article{
+            background-color: lightgray;
+        }
+
+        article > aside{
+            background-color: rgba(0, 0, 0, 0.253);
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px 10px 0px;/* top-left -> top-right-> bottom-right -> bottom-left*/
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.466);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center ;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<!--
+    div-> tag de agrupamento block-level (não semantica)
+    span->tag de agrupamento inline-level (não semantica)
+-->
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esporte Política e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum saepe nostrum harum debitis. Odit facilis dolorum architecto, expedita dignissimos nemo, amet sit sapiente nobis rem aliquid? Accusamus aliquam cumque dignissimos.</p>
+                <aside>
+                    <p>Artigo escrito por...</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Desenvolvido por ...</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

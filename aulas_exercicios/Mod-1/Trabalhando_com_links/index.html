@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Essa é a primeira página</h1>
+    <p>Aqui irei mostrar um exemplo de <a href="https://pt.wikipedia.org/wiki/BTS" target="_self" rel="_external">Link externo</a> que abre na mesmo página</p> <!-- _self abre link na mesma página(padrão)-->
+
+    <p><a href="https://pt.wikipedia.org/wiki/BTS" target="_blank" rel="_external">Link externo</a> que abre em outra aba.</p> <!-- external indica link para outro site --> <!-- _blank abre link em outra aba -->
+    
+    <p>Exemplo de <a href="pag002.html" target="_self" rel="next">link interno</a></p><!-- next indica que o link é a proxima parte da página atual-->
+
+    <p>Este <a href="TestePasta/pag003.html">link interno</a> leva para uma página que esta dentro de uma pasta.</p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="Arquivos/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar aula sobre links em PDF</a></li>
+        <li><a href="Arquivos/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.zip" type="application/zip">Aula sobre links compactado em ZIP</a></li>
+    </ul>
+    <!-- no dowload colocar o nome do arquivo (em alguns broswers pode reconhecer e acabar o não baixando) -->
+    
+    <!-- em type inserir o tipo de midia é o arquivo -->
+    <h5><a href="https://www.iana.org/assignments/media-types/media-types.xhtml" type="_blank" rel="external">Link para ver a lista de media types</a></h5>
+</body>
+</html>
